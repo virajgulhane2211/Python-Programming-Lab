@@ -1,0 +1,34 @@
+class Arith:
+    def __init__(self, x, y):  # Corrected: Added parameters x and y
+        self.x = x
+        self.y = y
+
+    def add(self):
+        print(self.x + self.y)
+
+    def sub(self):
+        print(self.x - self.y)
+
+    def multi(self):
+        print(self.x * self.y)
+
+class Scientific(Arith):
+    def __init__(self, x, y):  # Corrected: Added parameters x and y
+        self.x = x
+        self.y = y
+    def div(self):
+        print(self.x / self.y)
+
+    def power(self):
+        print(self.x ** self.y)
+
+class Project(Scientific):
+    def __init__(self, x, y):  # Corrected: Added parameters x and y
+        self.x = x
+        self.y = y
+
+
+
+z=Project(44,55)
+z.div()
+z.add()
